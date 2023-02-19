@@ -10,7 +10,7 @@ export class ProductBoxComponent {
   @Output() addToCart = new EventEmitter()
   @Input() product: Product | undefined ;
 
-  public onAddToCard(): void{
+  public onAddToCart(): void{
     this.addToCart.emit(this.product)
   }
 }
